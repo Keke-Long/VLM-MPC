@@ -1,0 +1,19 @@
+Based on the current situation and step-by-step reasoning provided, let's generate the optimal MPC parameters:
+
+1. **Prediction Horizon (N):** Based on the current speed of 6.93 m/s and the commercial area road environment, a prediction horizon of 10 time steps seems reasonable for planning ahead effectively.
+
+2. **Cost Weights:**
+   - **Q (speed maintenance weight):** Fixed at 1.
+   - **R (control effort weight):** Considering the presence of a truck ahead and the need for smooth control, a value of 2.0 is chosen for R.
+   - **Q_h (headway maintenance weight):** Given the importance of maintaining a safe headway, a value of 3.0 is selected for Q_h.
+
+3. **Desired Speed:** The historical average desired speed is 6.21 m/s. Considering the current speed and environment, a target speed of 6.5 m/s is chosen for improved efficiency.
+
+4. **Desired Headway:** The historical average desired headway is 2.6 seconds. Considering the relative speed and acceleration of the preceding vehicle, a desired headway of 3.0 seconds is selected for safety.
+
+Therefore, the optimal MPC parameters are as follows:
+
+[N, Q, R, Q_h, desired_speed, desired_headway] = [10, 1, 2.0, 3.0, 6.5, 3.0]
+The optimal MPC parameters in the requested list format are:
+
+[10, 1, 2.0, 3.0, 6.5, 3.0]

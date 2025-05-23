@@ -1,0 +1,23 @@
+clip==1.0
+cvxpy==1.5.2
+matplotlib==3.7.5
+numpy==1.24.3
+numpy==1.24.4
+nuscenes_devkit==1.1.11
+openai==1.44.0
+pandas==2.0.3
+Pillow==10.4.0
+pyquaternion==0.9.9
+Requests==2.32.3
+scikit_learn==1.3.2
+scipy==1.14.1
+seaborn==0.13.2
+Shapely==1.8.5.post1
+torch==2.4.0
+torch==2.3.1
+tqdm==4.66.5
+tqdm==4.66.4
+transformers==4.44.2
+transformers==4.44.0
+
+python_version >= "3.8.19"

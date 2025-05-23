@@ -1,0 +1,57 @@
+
+    **Current Environment:**
+    **Weather**: The weather is clear
+**Lighting**: Daytime
+**Road Type**: The road is a commercial area road
+**Static Obstacles**: There are parked vehicles on the roadside
+
+    **Ego Vehicle State:**
+    1. **Position (x, y):** (1233.49, 1366.83)
+    2. **Speed (m/s):** 1.89
+    3. **Acceleration (m/s²):** 1.50
+    4. **Direction (radians):** 0.00
+
+    **Surrounding Vehicles State:**
+    
+        ** One vehicle is detected as the preceding vehicle:**
+        - **Relative Position (delta_x, delta_y):** (-0.02, 13.77)
+            - **Note:** delta_y is the distance along the direction of the ego vehicle's travel, and delta_x is the distance perpendicular to the ego vehicle's travel direction.
+        - **Relative Speed (m/s):** 1.83
+        - **Relative Acceleration (m/s²):** 0.01
+        
+    
+    **Average Parameters Based on Historical Data:**
+    
+    According to historical data, the average parameters in the current scenario (rain, intersection, parking_lot) are as follows:
+    - N: 9
+    - Q: 1
+    - Q_h: 3.11
+    - R: 1.93
+    - desired_speed: 6.21
+    - desired_headway: 2.6
+    
+    
+    **Additional Information:**
+    - We have attached an image of the scene in front of the vehicle to help you understand the current environment.
+    - Please note that we will call the AI model again in the next 20 seconds with updated scene information. The MPC parameters generated should be considered for the short term and may need to be updated.
+
+    The MPC parameters to be optimized include:
+    1. **Prediction Horizon (N):** The number of time steps the controller looks ahead. (Preferred value: 10)
+    2. **Cost Weights:**
+       - **Q (speed maintenance weight):** Fixed at 1.
+       - **R (control effort weight):** Weight for minimizing control effort.
+       - **Q_h (headway maintenance weight):** Weight for maintaining the desired headway (distance) to the front vehicle.
+    3. **desired_speed:** The target speed (m/s) for the ego vehicle. (Range: 5 to 11 m/s)
+    4. **desired_headway:** The desired headway (s) between the ego vehicle and the front vehicle. (Range: 1s to 3s)
+
+    **Step-by-Step Reasoning:**
+    1. **Understand the Current Situation**: Consider the current environment, the ego vehicle state, and the surrounding vehicles' state.
+    2. **Evaluate the Prediction Horizon (N)**: Determine a reasonable number of time steps to look ahead based on the current speed and environment.
+    3. **Set Cost Weights**:
+       - **Q** is fixed at 1 to simplify the optimization process.
+       - Balance **R** (control effort weight) and **Q_h** (headway maintenance weight) relative to Q, considering safety and comfort.
+    4. **Define Desired Speed**: Choose a target speed that is safe and efficient for the current conditions.
+    5. **Determine Desired Headway**: Ensure a safe distance to the preceding vehicle, taking into account the current relative speed and acceleration.
+
+    Now, apply this reasoning to generate the MPC parameters.
+    

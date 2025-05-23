@@ -1,0 +1,38 @@
+### Step 1: Current Situation Understanding
+- **Weather:** Rainy
+- **Lighting:** Night
+- **Road Type:** Highway
+- **Static Obstacles:** Parked vehicles on the roadside
+- **Ego Vehicle State:** Decelerating with varying acceleration
+
+### Step 2: Evaluation of Prediction Horizon (N)
+- **Preferred Prediction Horizon:** 10 (default)
+- **Recommendation:** Keep N at 10 for a reasonable lookahead considering the highway scenario.
+
+### Step 3: Setting Cost Weights
+- **Q (Speed Maintenance Weight):** 1 (fixed)
+- **R (Control Effort Weight):** 1.93 (historical average)
+- **Q_h (Headway Maintenance Weight):** 3.11 (historical average)
+- **Recommendation:** Maintain the historical average weights for R and Q_h to balance control effort and headway maintenance.
+
+### Step 4: Desired Speed
+- **Desired Speed Range:** 5 to 11 m/s
+- **Historical Average Desired Speed:** 6.21 m/s
+- **Recommendation:** Set the desired speed to the historical average of 6.21 m/s for a balance of safety and efficiency.
+
+### Step 5: Desired Headway
+- **Historical Average Desired Headway:** 2.6 s
+- **Recommendation:** Maintain the desired headway at 2.6 seconds to ensure a safe distance to the preceding vehicle.
+
+### Final MPC Parameters:
+1. **Prediction Horizon (N):** 10
+2. **Cost Weights:**
+   - Q (Speed Maintenance Weight): 1
+   - R (Control Effort Weight): 1.93
+   - Q_h (Headway Maintenance Weight): 3.11
+3. **Desired Speed:** 6.21 m/s
+4. **Desired Headway:** 2.6 seconds
+
+These optimized MPC parameters aim to balance speed maintenance, control effort, and headway maintenance for safe and efficient autonomous driving in the current rainy, night-time highway scenario with parked vehicles as static obstacles.
+The optimized MPC parameters in the requested list format are as follows:
+- [10, 1, 1.93, 3.11, 6.21, 2.6]

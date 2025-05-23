@@ -1,0 +1,4 @@
+/home/ubuntu/anaconda3/envs/Nuscenes/bin/python /home/ubuntu/Documents/Nuscenes_vlm_driver/image_process/2.py
+results ['**Weather**: The weather is clear\n', '**Lighting**: Daytime\n', '**Road Type**: The road is a urban road\n', '**Static Obstacles**: There are parked vehicles on the roadside']
+
+Process finished with exit code 0

@@ -1,0 +1,36 @@
+Based on the current situation and step-by-step reasoning provided, let's generate the optimal MPC parameters:
+
+1. **Prediction Horizon (N):** Since the ego vehicle is moving at a low speed of 1.89 m/s and considering the commercial area road with parked vehicles, a prediction horizon of 10 time steps (N = 10) is reasonable to anticipate potential obstacles and make timely adjustments.
+
+2. **Cost Weights:**
+   - **Q (speed maintenance weight):** Fixed at 1.
+   - **R (control effort weight):** Given the need to minimize control effort while ensuring safety and comfort, a value of 1.93 (R = 1.93) based on historical data seems appropriate.
+   - **Q_h (headway maintenance weight):** Considering the importance of maintaining a safe headway, a value of 3.11 (Q_h = 3.11) from historical data is suitable.
+
+3. **Desired Speed:** The desired speed for the ego vehicle should be within the range of 5 to 11 m/s. Given the current conditions and historical data, a desired speed of 6.21 m/s (desired_speed = 6.21) is chosen as it balances efficiency and safety.
+
+4. **Desired Headway:** The desired headway between the ego vehicle and the preceding vehicle should be maintained at 2.6 seconds based on historical data. Considering the relative speed and acceleration of the front vehicle, this headway ensures safety and smooth traffic flow.
+
+Therefore, the optimal MPC parameters are as follows:
+
+[MPC Parameters]
+- **Prediction Horizon (N):** 10
+- **Cost Weights:**
+  - Q (speed maintenance weight): 1
+  - R (control effort weight): 1.93
+  - Q_h (headway maintenance weight): 3.11
+- **Desired Speed:** 6.21 m/s
+- **Desired Headway:** 2.6 seconds
+
+These parameters are tailored to the current environment and vehicle dynamics to enhance the autonomous driving system's performance and safety.
+The optimal MPC parameters in the requested list format are:
+
+[MPC Parameters]
+- Prediction Horizon (N): 10
+- Q (speed maintenance weight): 1
+- R (control effort weight): 1.93
+- Q_h (headway maintenance weight): 3.11
+- Desired Speed: 6.21 m/s
+- Desired Headway: 2.6 seconds
+
+These parameters are designed to optimize the Model Predictive Control for the autonomous driving system in the current scenario.
