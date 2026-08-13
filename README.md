@@ -1,9 +1,6 @@
 # VLM-MPC
 
-This repository contains the code and related research materials for the following peer-reviewed article:
-
-> Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li, "VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving," *Transportation Research Part C: Emerging Technologies*, vol. 183, 2026, Article 105487.  
-> [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0968090X25004917) | [DOI: 10.1016/j.trc.2025.105487](https://doi.org/10.1016/j.trc.2025.105487)
+Code for [VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving](https://www.sciencedirect.com/science/article/pii/S0968090X25004917).
 
 ## Overview
 
