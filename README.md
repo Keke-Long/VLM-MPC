@@ -25,16 +25,6 @@ The repository includes materials for:
 - **Baseline comparison**: Materials for comparison with Agent-Driver and related baselines.
 - **Example scenes and figures**: Sample inputs and framework illustrations.
 
-Key directories include:
-
-- `controller_MPC/`
-- `calibrate_MPC/`
-- `controller_llm/`, `controller_llm2/`, and `controller_llm3/`
-- `data_prepare/`
-- `image_process/`
-- `evaluate/`
-- `baseline_Agent-Driver/`
-- `scenes_data example/`
 
 ## Installation
 
