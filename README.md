@@ -1,6 +1,6 @@
 # VLM-MPC
 
-Code for [VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving](https://www.sciencedirect.com/science/article/pii/S0968090X25004917).
+Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li, "VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving," *Transportation Research Part C: Emerging Technologies*, vol. 183, 2026, Article 105487, DOI: [10.1016/j.trc.2025.105487](https://doi.org/10.1016/j.trc.2025.105487).
 
 ## Overview
 
@@ -24,7 +24,6 @@ The repository includes materials for:
 - **Evaluation**: Safety, smoothness, and response-stability evaluation.
 - **Baseline comparison**: Materials for comparison with Agent-Driver and related baselines.
 - **Example scenes and figures**: Sample inputs and framework illustrations.
-
 
 ## Installation
 
