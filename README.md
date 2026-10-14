@@ -1,6 +1,17 @@
 # VLM-MPC
 
-Code for Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li, "VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving," *Transportation Research Part C: Emerging Technologies*, vol. 183, 2026, Article 105487, DOI: [10.1016/j.trc.2025.105487](https://doi.org/10.1016/j.trc.2025.105487).
+**VLM-MPC: Model Predictive Controller Augmented Vision Language Model for Autonomous Driving**
+
+Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li  
+*Transportation Research Part C: Emerging Technologies*, Volume 183, Article 105487 (2026).
+
+**[Paper (Publisher)](https://doi.org/10.1016/j.trc.2025.105487) | [Source Code](https://github.com/Keke-Long/VLM-MPC)**
+
+## Key Contributions
+
+- **Hierarchical decision-making and control:** An asynchronous framework where a vision-language model generates driving parameters and a model predictive controller executes real-time, dynamics-aware control.
+- **Context-aware driving decisions:** An environment encoder and reference memory supply scene context to support the VLM's parameter selection.
+- **Closed-loop evaluation:** Experiments on nuScenes and CARLA assess safety, smoothness, and response stability in challenging driving scenarios.
 
 ## Overview
 
@@ -12,6 +23,10 @@ The framework uses two asynchronous levels:
 2. **Lower-level MPC**: Uses those parameters to control the vehicle in real time while accounting for vehicle dynamics and engine lag, and returns state feedback to the overall system.
 
 The corresponding article evaluates VLM-MPC using the nuScenes dataset and CARLA simulation across challenging conditions including night, rain, fog, and intersections. The experiments examine safety, smoothness, environmental understanding, and the response stability provided by the reference-memory and environment-encoder components.
+
+## Framework
+
+The framework separates high-level VLM reasoning from low-level MPC control. The original architecture is presented in **Figure 1 of the [paper](https://doi.org/10.1016/j.trc.2025.105487)**. The standalone figure will be displayed here once its image asset is added to this repository.
 
 ## Repository Structure
 
