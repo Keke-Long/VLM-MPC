@@ -5,7 +5,7 @@
 Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li  
 *Transportation Research Part C: Emerging Technologies*, Volume 183, Article 105487 (2026).
 
-**[Paper (Publisher)](https://doi.org/10.1016/j.trc.2025.105487) | [Source Code](https://github.com/Keke-Long/VLM-MPC)**
+**[Paper (Publisher)](https://doi.org/10.1016/j.trc.2025.105487) | [Author-version PDF](assets/paper/VLM-MPC_TRC_2026.pdf) | [Source Code](https://github.com/Keke-Long/VLM-MPC)**
 
 ## Key Contributions
 
@@ -26,7 +26,9 @@ The corresponding article evaluates VLM-MPC using the nuScenes dataset and CARLA
 
 ## Framework
 
-The framework separates high-level VLM reasoning from low-level MPC control. The original architecture is presented in **Figure 1 of the [paper](https://doi.org/10.1016/j.trc.2025.105487)**. The standalone figure will be displayed here once its image asset is added to this repository.
+The framework separates high-level VLM reasoning from low-level MPC control. The original architecture is presented in **Figure 1 of the [paper](https://doi.org/10.1016/j.trc.2025.105487)**.
+
+![VLM-MPC framework overview](assets/figures/framework_overview.png)
 
 ## Repository Structure
 
