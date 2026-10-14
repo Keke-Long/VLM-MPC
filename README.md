@@ -15,20 +15,14 @@ Keke Long, Haotian Shi, Jiaxi Liu, Chaowei Xiao, and Xiaopeng Li
 
 ## Overview
 
-VLM-MPC is a closed-loop autonomous-driving framework that combines a Vision-Language Model (VLM) with Model Predictive Control (MPC).
-
-The framework uses two asynchronous levels:
-
-1. **Upper-level VLM**: Interprets driving scenes and generates driving parameters, such as desired speed and desired headway, using front-camera images, ego-vehicle states, environmental conditions, and reference memory.
-2. **Lower-level MPC**: Uses those parameters to control the vehicle in real time while accounting for vehicle dynamics and engine lag, and returns state feedback to the overall system.
-
-The corresponding article evaluates VLM-MPC using the nuScenes dataset and CARLA simulation across challenging conditions including night, rain, fog, and intersections. The experiments examine safety, smoothness, environmental understanding, and the response stability provided by the reference-memory and environment-encoder components.
-
-## Framework
-
-The framework separates high-level VLM reasoning from low-level MPC control. The original architecture is presented in **Figure 1 of the [paper](https://doi.org/10.1016/j.trc.2025.105487)**.
-
 ![VLM-MPC framework overview](assets/figures/framework_overview.png)
+
+VLM-MPC is a closed-loop autonomous driving framework that integrates a Vision-Language Model (VLM) with Model Predictive Control (MPC) through a two-level asynchronous architecture:
+
+- **Upper-level VLM:** Interprets driving scenes and generates key driving parameters, including desired speed and desired headway, using front-camera images, ego-vehicle states, environmental conditions, and reference memory.
+- **Lower-level MPC:** Uses these parameters for real-time vehicle control while accounting for vehicle dynamics and engine lag, and provides state feedback to the overall system.
+
+The framework is evaluated using nuScenes and CARLA under challenging driving conditions, including night, rain, fog, and intersections.
 
 ## Repository Structure
 
